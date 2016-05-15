@@ -6,7 +6,8 @@ Components:
   Java(TM) SE Runtime Environment (build 1.8.0_92-b14)
   Java HotSpot(TM) 64-Bit Server VM (build 25.92-b14, mixed mode)
 * Apache Maven 3.3.9
-* Python 2.7.11 with python-dev python-numpy
+* Python 2.7.11
+* Other tools: git wget unzip vim python python-setuptools python-dev python-numpy 
 
 ### Pull the image from Docker Repository
 
