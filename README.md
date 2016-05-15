@@ -24,8 +24,8 @@ Then, you're ready to run :+1:
 docker run -d --name my-jre-mvn-py -v /data:/data -i -t openkbs/jre-mvn-py
 ```
 ### Build the image
-- Say, you will build the image "my/jre-mvn-py".
+- Say, you will build the image "my-jre-mvn-py".
 
 ```bash
-docker build -t my/jre-mvn-py .
+docker build -t my-jre-mvn-py .
 ```
