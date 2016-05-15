@@ -1,4 +1,4 @@
-# Java 8 JRE server + Maven 3 + PyDev
+# Java 8 (1.8.0_92) JRE server + Maven 3.3.9 + PyDev 2.7.11
 
 Components:
 
