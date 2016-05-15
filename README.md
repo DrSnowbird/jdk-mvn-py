@@ -14,7 +14,7 @@ Basic Components:
 docker pull openkbs/jre-mvn-py
 ```
 
-### To Run the image
+### Run the image
 
 - make sure you create your work directory, e.g., /data
 
@@ -24,8 +24,8 @@ Then, you're ready to run :+1:
 docker run -d --name my-jre-mvn-py -v /data:/data -i -t openkbs/jre-mvn-py
 ```
 ### Build the image
-- Say, you will build the image "my-jre-mvn-py".
+- Say, you will build the image "my/jre-mvn-py".
 
 ```bash
-docker build -t my-jre-mvn-py .
+docker build -t my/jre-mvn-py .
 ```
