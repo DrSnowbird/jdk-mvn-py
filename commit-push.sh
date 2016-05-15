@@ -12,7 +12,7 @@ docker ps -a
 containerID=`docker ps |grep "${imageTag}"|awk '{print $1}'`
 echo "containerID=$containerID"
 
-echo docker commit -m "initial image" ${containerID} ${imageTag}
+docker commit -m "initial image" ${containerID} ${imageTag}
 
-echo docker push ${imageTag}
+docker push ${imageTag}
 
