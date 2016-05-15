@@ -11,7 +11,7 @@ Basic Components:
 
 
 ```bash
-docker pull openkbs/jre-maven
+docker pull openkbs/jre-mvn-py
 ```
 
 ### To Run the image
@@ -21,11 +21,11 @@ docker pull openkbs/jre-maven
 Then, you're ready to run :+1:
 
 ```bash
-docker run -d --name my-jre-maven -v /data:/data -i -t openkbs/jre-maven
+docker run -d --name my-jre-mvn-py -v /data:/data -i -t openkbs/jre-mvn-py
 ```
 ### Build the image
-- Say, you will build the image "my/jre-maven".
+- Say, you will build the image "my/jre-mvn-py".
 
 ```bash
-docker build -t my/jre-maven .
+docker build -t my/jre-mvn-py .
 ```
