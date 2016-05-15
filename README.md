@@ -1,5 +1,7 @@
 # Java 8 (1.8.0_92) JRE server + Maven 3.3.9 + PyDev 2.7.11
 
+[![](https://imagelayers.io/badge/openkbs/jre-mvn-py:latest.svg)](https://imagelayers.io/?images=openkbs/jre-mvn-py:latest 'Get your own badge on imagelayers.io')
+
 Components:
 
 * Oracle Java "1.8.0_92" JRE Runtime Environment for Server
