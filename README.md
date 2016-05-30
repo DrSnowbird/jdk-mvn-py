@@ -43,3 +43,15 @@ To run your own image, say, with some-jre-mvn-my:
 ```bash
 docker run -d --name some-jre-mvn-py -v /data:/data -i -t my/jre-mvn-py
 ```
+
+### Shell into the Docker instance
+```bash
+docker exec -it some-jre-mvn-py /bin/bash
+```
+
+### Run Python code
+To run Python code 
+```bash
+docker run --rm openkbs/jre-mvn-py python -c 'print("Hello World")'
+```
+
