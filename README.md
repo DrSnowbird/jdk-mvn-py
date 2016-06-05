@@ -20,7 +20,7 @@ docker pull openkbs/jre-mvn-py
 
 ### Base the image to build add-on components:
 ```Dockerfile
-FROM openkbs:jre-mvn-py
+FROM openkbs/jre-mvn-py
 ```
 
 ### Run the image
