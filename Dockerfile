@@ -41,8 +41,9 @@ RUN apt-get clean
 RUN mkdir -p /data
 COPY . /data
 
-WORKDIR /data
 VOLUME "/data"
+
+WORKDIR /data
 
 #### Define default command.
 #CMD ["bash"]
