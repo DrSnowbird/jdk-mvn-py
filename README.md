@@ -11,50 +11,61 @@ Components:
 * Python 2.7.11
 * Other tools: git wget unzip vim python python-setuptools python-dev python-numpy 
 
-### Pull the image from Docker Repository
-
+## Pull the image from Docker Repository
 
 ```bash
 docker pull openkbs/jre-mvn-py
 ```
 
-### Base the image to build add-on components:
+## Base the image to build add-on components
+
 ```Dockerfile
 FROM openkbs/jre-mvn-py
 ```
 
-### Run the image
+## Run the image
 
-- make sure you create your work directory, e.g., /data
-
-Then, you're ready to run :+1:
+Then, you're ready to run :
+Make sure you create your work directory, e.g., /data
 
 ```bash
-docker run -d --name my-jre-mvn-py -v /data:/data -i -t openkbs/jre-mvn-py
+mkdir ./data
+docker run -d --name my-jre-mvn-py -v $PWD/data:/data -i -t openkbs/jre-mvn-py
 ```
-### Build and Run your own image
-- Say, you will build the image "my/jre-mvn-py".
+
+## Build and Run your own image
+
+Say, you will build the image "my/jre-mvn-py".
 
 ```bash
 docker build -t my/jre-mvn-py .
 ```
-To run your own image, say, with some-jre-mvn-my:
+
+To run your own image, say, with some-jre-mvn-py:
 
 ```bash
-docker run -d --name some-jre-mvn-py -v /data:/data -i -t my/jre-mvn-py
+mkdir ./data
+docker run -d --name some-jre-mvn-py -v $PWD/data:/data -i -t my/jre-mvn-py
 ```
 
-### Shell into the Docker instance
+## Shell into the Docker instance
 ```bash
 docker exec -it some-jre-mvn-py /bin/bash
 ```
 
-### Run Python code
+## Run Python code
 To run Python code 
+
 ```bash
 docker run --rm openkbs/jre-mvn-py python -c 'print("Hello World")'
 
 or,
 
 docker run --rm openkbs/jre-mvn-py python < myPyScript.py 
+
+or,
+alias dpy='docker run --rm openkbs/jre-mvn-py python'
+dpy -c 'print("Hello World")'
+dpy < myPyScript.py
 ```
+
