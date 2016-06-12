@@ -8,7 +8,7 @@
 #  docker build -t openkbs/jre-mvn-py:1.0.0 -t openkbs/jre-mvn-py:latest .
 
 imageTag=openkbs/jre-mvn-py
-version=1.0.0
+#version=1.0.0
 
 if [ ! "$version" == "" ]; then
     docker build -t ${imageTag}:$version -t ${imageTag}:latest .
@@ -27,6 +27,7 @@ fi
 echo ">>> Docker Images"
 echo "To build again: "
 echo "  docker build -t openkbs/${imageTag}:1.0.0 -t openkbs/${imageTag}:latest . "
+echo "  docker build -t openkbs/${imageTag}:latest . "
 echo
 docker images 
 

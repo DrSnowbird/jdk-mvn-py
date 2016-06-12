@@ -63,7 +63,9 @@ docker run --rm openkbs/jre-mvn-py python -c 'print("Hello World")'
 or,
 
 ```bash
-docker run --rm openkbs/jre-mvn-py python < myPyScript.py 
+mkdir ./data
+echo "print('Hello World')" > ./data/myPyScript.py
+docker run -it --rm --name some-jre-mvn-py -v "$PWD"/data:/data openkbs/jre-mvn-py python myPyScript.py
 ```
 
 or,
@@ -71,6 +73,5 @@ or,
 ```bash
 alias dpy='docker run --rm openkbs/jre-mvn-py python'
 dpy -c 'print("Hello World")'
-dpy < myPyScript.py
 ```
 
