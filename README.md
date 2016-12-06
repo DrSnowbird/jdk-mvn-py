@@ -109,4 +109,3 @@ For example, try this docker-scala-ide:
 See also,
 [Java Development in Docker](https://blog.giantswarm.io/getting-started-with-java-development-on-docker/)
                                                                                                                                                                      119,1         Bot
-
