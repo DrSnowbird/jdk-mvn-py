@@ -75,3 +75,38 @@ alias dpy='docker run --rm openkbs/jre-mvn-py python'
 dpy -c 'print("Hello World")'
 ```
 
+## Compile or Run java while no local installation needed
+Remember, the default working directory, /data, inside the docker container -- treat is as "/".
+So, if you create subdirectory, "./data/workspace", in the host machine and
+the docker container will have it as "/data/workspace".
+
+```java
+#!/bin/bash -x
+mkdir ./data
+cat >./data/HelloWorld.java <<-EOF
+public class HelloWorld {
+   public static void main(String[] args) {
+      System.out.println("Hello, World");
+   }
+}
+EOF
+cat ./data/HelloWorld.java
+alias djavac='docker run -it --rm --name some-jre-mvn-py3 -v '$PWD'/data:/data openkbs/jre-mvn-py3 javac'
+alias djava='docker run -it --rm --name some-jre-mvn-py3 -v '$PWD'/data:/data openkbs/jre-mvn-py3 java'
+
+djavac HelloWorld.java
+djava HelloWorld
+```
+And, the output:
+```
+Hello, World
+```
+Hence, the alias above, "djavac" and "djava" is your docker-based "javac" and "java" commands and
+it will work the same way as your local installed Java's "javac" and "java" commands.
+However, for larger complex projects, you might want to consider to use Docker-based IDE.
+For example, try this docker-scala-ide:
+[Scala IDE in Docker](https://github.com/stevenalexander/docker-scala-ide)
+See also,
+[Java Development in Docker](https://blog.giantswarm.io/getting-started-with-java-development-on-docker/)
+                                                                                                                                                                     119,1         Bot
+
