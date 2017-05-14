@@ -1,20 +1,11 @@
-# Java 8 (1.8.0_121) JRE server + Maven 3.3.9 + Python 2.7.12
+# Java 8 (1.8.0_131) JRE server + Maven 3.3.9 + Python 2.7.12
 
 [![](https://imagelayers.io/badge/openkbs/jre-mvn-py:1.0.0.svg)](https://imagelayers.io/?images=openkbs/jre-mvn-py:1.0.0 'Get your own badge on imagelayers.io')
 
 ## Components:
-* java version "1.8.0_121"
-java version "1.8.0_121"
-Java(TM) SE Runtime Environment (build 1.8.0_121-b13)
-Java HotSpot(TM) 64-Bit Server VM (build 25.121-b13, mixed mode)
-
-* Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T16:41:47+00:00)
+* java version "1.8.0_131"
+* Apache Maven 3.5.0
 Maven home: /usr/apache-maven-3.3.9
-Java version: 1.8.0_121, vendor: Oracle Corporation
-Java home: /usr/jdk1.8.0_121/jre
-Default locale: en_US, platform encoding: ANSI_X3.4-1968
-OS name: "linux", version: "4.4.0-59-generic", arch: "amd64", family: "unix"
-
 * Python 2.7.12
 * Other tools: git wget unzip vim python python-setuptools python-dev python-numpy 
 
@@ -65,6 +56,11 @@ To run Python code
 
 ```bash
 docker run --rm openkbs/jre-mvn-py python -c 'print("Hello World")'
+```
+or,
+
+```bash
+docker run -i --rm openkbs/jre-mvn-py python < myPyScript.py 
 ```
 
 or,
