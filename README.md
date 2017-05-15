@@ -1,11 +1,11 @@
-# Java 8 (1.8.0_131) JRE server + Maven 3.3.9 + Python 2.7.12
+# Java 8 (1.8.0_131) JRE server + Maven 3.5.0 + Python 2.7.12
 
 [![](https://imagelayers.io/badge/openkbs/jre-mvn-py:1.0.0.svg)](https://imagelayers.io/?images=openkbs/jre-mvn-py:1.0.0 'Get your own badge on imagelayers.io')
 
 ## Components:
 * java version "1.8.0_131"
 * Apache Maven 3.5.0
-Maven home: /usr/apache-maven-3.3.9
+Maven home: /usr/apache-maven-3.5.0
 * Python 2.7.12
 * Other tools: git wget unzip vim python python-setuptools python-dev python-numpy 
 
