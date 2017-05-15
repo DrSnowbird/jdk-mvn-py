@@ -29,6 +29,6 @@ echo "To build again: "
 echo "  docker build -t openkbs/${imageTag}:1.0.0 -t openkbs/${imageTag}:latest . "
 echo "  docker build -t openkbs/${imageTag}:latest . "
 echo
-docker images 
+docker images |grep jre-mvn-py
 
 
