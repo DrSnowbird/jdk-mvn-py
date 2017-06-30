@@ -9,9 +9,10 @@ ENV DEBIAN_FRONTEND noninteractive
 
 ##### update ubuntu
 RUN apt-get update \
-  && apt-get install -y curl net-tools build-essential git wget unzip vim python python-setuptools python-dev python-numpy \
-  && apt-get clean \
-  && rm -rf /var/lib/apt/lists/*
+    && apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev \
+    && apt-get install -y curl net-tools build-essential git wget unzip vim python python-setuptools python-dev python-numpy \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
 
 #### Install Java 8
 #### Per version variables (Need to find out from http://java.oracle.com site for every update
