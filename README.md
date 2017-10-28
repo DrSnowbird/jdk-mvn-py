@@ -1,10 +1,10 @@
-# Java 8 (1.8.0_141) JRE server + Maven 3.5.0 + Python 2.7.12
+# Java 8 (1.8.0_152) JRE server + Maven 3.5.0 + Python 2.7.12
 
 [![](https://imagelayers.io/badge/openkbs/jre-mvn-py:1.0.0.svg)](https://imagelayers.io/?images=openkbs/jre-mvn-py:1.0.0 'Get your own badge on imagelayers.io')
 
 ## Components:
-* Oracle Java "1.8.0_141" JRE Runtime Environment for Server
-  Java(TM) SE Runtime Environment (build 1.8.0_141-b15)
+* Oracle Java "1.8.0_152" JRE Runtime Environment for Server
+  Java(TM) SE Runtime Environment (build 1.8.0_152)
 * Apache Maven 3.5.0
 Maven home: /usr/apache-maven-3.5.0
 * Python 2.7.12
