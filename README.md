@@ -1,13 +1,13 @@
-# Java 8 (1.8.0_162) JRE server + Maven 3.5.0 + Python 2.7.12
+# Java 8 (1.8.0_172) JDK + Maven 3.5.3 + Python 2.7.12
 
-[![](https://imagelayers.io/badge/openkbs/jre-mvn-py:1.0.0.svg)](https://imagelayers.io/?images=openkbs/jre-mvn-py:1.0.0 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/openkbs/jre-mvn-py3.svg)](https://microbadger.com/images/openkbs/jre-mvn-py3 "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/openkbs/jre-mvn-py3.svg)](https://microbadger.com/images/openkbs/jre-mvn-py3 "Get your own version badge on microbadger.com")
 
 ## Components:
-* java version "1.8.0_162"
-  Java(TM) SE Runtime Environment (build 1.8.0_162-b12)
-  Java HotSpot(TM) 64-Bit Server VM (build 25.162-b12, mixed mode)
-* Apache Maven 3.5.0
-Maven home: /usr/apache-maven-3.5.0
+* java version "1.8.0_172"
+  Java(TM) SE Runtime Environment (build 1.8.0_172-b11)
+  Java HotSpot(TM) 64-Bit Server VM (build 25.172-b11, mixed mode)
+* Apache Maven 3.5.3
+  Maven home: /usr/apache-maven-3.5.3
 * Python 2.7.12
 * Other tools: git wget unzip vim python python-setuptools python-dev python-numpy 
 
