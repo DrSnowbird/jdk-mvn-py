@@ -2,6 +2,10 @@
 
 [![](https://images.microbadger.com/badges/image/openkbs/jre-mvn-py3.svg)](https://microbadger.com/images/openkbs/jre-mvn-py3 "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/openkbs/jre-mvn-py3.svg)](https://microbadger.com/images/openkbs/jre-mvn-py3 "Get your own version badge on microbadger.com")
 
+# License Agreement
+By using this image, you agree the Oracle Java JDK License.
+This image contains [Oracle JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html). You must accept the [Oracle Binary Code License Agreement for Java SE](http://www.oracle.com/technetwork/java/javase/terms/license/index.html) to use this image.
+
 ## Components:
 * java version "1.8.0_181"
   Java(TM) SE Runtime Environment (build 1.8.0_181-b13)
