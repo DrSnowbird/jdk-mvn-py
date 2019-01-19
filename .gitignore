@@ -1,2 +1,9 @@
 *~
 data/
+
+*.swp
+*.tmp
+*.tar.gz
+*.tgz
+*.zip
+

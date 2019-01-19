@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 ##### update ubuntu
 RUN apt-get update \
     && apt-get install -y automake pkg-config libpcre3-dev zlib1g-dev liblzma-dev \
-    && apt-get install -y curl net-tools build-essential git wget unzip vim python python-setuptools python-dev python-numpy \
+    && apt-get install -y curl net-tools build-essential git wget unzip vim python python-setuptools python-pip python-dev python-numpy \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
@@ -71,8 +71,7 @@ ENV GRADLE_HOME=${GRADLE_HOME}
 ARG GRADLE_PACKAGE=gradle-${GRADLE_VERSION}-bin.zip
 ARG GRADLE_PACKAGE_URL=https://services.gradle.org/distributions/${GRADLE_PACKAGE}
 # https://services.gradle.org/distributions/gradle-5.1.1-bin.zip
-RUN \
-    mkdir -p ${GRADLE_INSTALL_BASE} && \
+RUN mkdir -p ${GRADLE_INSTALL_BASE} && \
     cd ${GRADLE_INSTALL_BASE} && \
     wget -c ${GRADLE_PACKAGE_URL} && \
     unzip -d ${GRADLE_INSTALL_BASE} ${GRADLE_PACKAGE} && \
@@ -84,8 +83,7 @@ RUN \
 ######################################
 #### ---- NodeJS from Ubuntu ---- ####
 ######################################
-#RUN \
-#    apt-get update -y && \
+#RUN apt-get update -y && \
 #    apt-get install -y git xz-utils && \
 #    apt-get install -y nodejs npm && \
 #    npm --version && \
@@ -94,10 +92,10 @@ RUN \
 #########################################
 #### ---- Node from NODESOURCES ---- ####
 #########################################
-ARG NODE_VERSION=${NODE_VERSION:-10}
+# Ref: https://github.com/nodesource/distributions
+ARG NODE_VERSION=${NODE_VERSION:-11}
 ENV NODE_VERSION=${NODE_VERSION}
-RUN \
-    apt-get update -y && \
+RUN apt-get update -y && \
     apt-get install -y sudo curl git xz-utils && \
     curl -sL https://deb.nodesource.com/setup_${NODE_VERSION}.x | bash - && \
     apt-get install -y gcc g++ make && \

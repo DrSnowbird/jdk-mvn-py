@@ -1,4 +1,4 @@
-# Java 8 (1.8.0_201) JDK + Maven 3.6 + Python 2.7 + PIP3 18.1 + npm 6.4.1 + node v10.15.0 + Gradle 5.1
+# Java 8 (1.8.0_201) JDK + Maven 3.6 + Python 2.7 + pip 8.1.1 + node 11.7.0 + npm 6.5.0 + Gradle 5.1
 [![](https://images.microbadger.com/badges/image/openkbs/jdk-mvn-py.svg)](https://microbadger.com/images/openkbs/jdk-mvn-py "Get your own image badge on microbadger.com") [![](https://images.microbadger.com/badges/version/openkbs/jdk-mvn-py.svg)](https://microbadger.com/images/openkbs/jdk-mvn-py "Get your own version badge on microbadger.com")
 
 # License Agreement
@@ -10,9 +10,9 @@ This image contains [Oracle JDK 8](http://www.oracle.com/technetwork/java/javase
   Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
   Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 * Apache Maven 3.6.0
-* npm 6.4.1 + node v10.15.0 (from NodeSource official Node Distribution)
+* node v11.7.0 + npm 6.5.0 (from NodeSource official Node Distribution)
 * Gradle 5.1
-* Python 2.7.12
+* Python 2.7.12 + pip 8.1.1
 * Other tools: git wget unzip vim python python-setuptools python-dev python-numpy 
 
 ## Pull the image from Docker Repository
@@ -141,7 +141,7 @@ For example, try this docker-scala-ide:
 
 # Releases information
 ```
-root@e81adccb305e:/data# /printVersions.sh 
+root@cd9d762e7a14:/data#  /printVersions.sh 
 + echo JAVA_HOME=/usr/java
 JAVA_HOME=/usr/java
 + java -version
@@ -157,7 +157,7 @@ OS name: "linux", version: "4.15.0-43-generic", arch: "amd64", family: "unix"
 + python -V
 Python 2.7.12
 + pip --version
-/printVersions.sh: line 7: pip: command not found
+pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
 + gradle --version
 
 ------------------------------------------------------------
@@ -175,9 +175,9 @@ JVM:          1.8.0_201 (Oracle Corporation 25.201-b09)
 OS:           Linux 4.15.0-43-generic amd64
 
 + npm -v
-6.4.1
+6.5.0
 + node -v
-v10.15.0
+v11.7.0
 + cat /etc/lsb-release /etc/os-release
 DISTRIB_ID=Ubuntu
 DISTRIB_RELEASE=16.04
